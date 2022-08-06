@@ -17,7 +17,7 @@ export function Product({product}: ProductProps) {
             <p className="font-bold">
                {product.price}
             </p>
-            <button onClick={()=>setSnow(true)} className="py-2 px-4 border bg-yellow-400">Показать</button>
+            <button onClick={()=>setSnow(prev=>!prev)} className="py-2 px-4 border bg-yellow-400">Показать</button>
              {snow && <div>
                 <p>{product.description}</p>
             </div>}
