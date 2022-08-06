@@ -7,7 +7,7 @@ import { IProduct } from './module';
 function App() {
   return (
     <div className="container mx-auto max-w-2xl pt-5">
-      {products.map((product:IProduct, index:number) => <Product product={product} key={product.id}/>)}
+      {products.map(product => <Product product={product} key={product.id}/>)}
     </div>
     
   );
