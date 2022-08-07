@@ -13,7 +13,7 @@ function App() {
       {loading &&<Loader/>}
       {error && <Error/>}
       {products.map(product => <Product product={product} key={product.id}/>)}
-      <Modal>
+      <Modal title='Создать новый продукт'>
           <CreateProduct/>
       </Modal>
     </div>
